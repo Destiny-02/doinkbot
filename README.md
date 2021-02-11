@@ -19,4 +19,8 @@ greets any user that introduces themself in the text channel (eg. I'm Destiny!) 
 replies to doinks \
 replies to hi/hello 
 
-# install instructions
+# installation instructions
+install node.js https://nodejs.org/en/download/ \
+install dependences (`npm i`) \
+create `.env` file with bot token `DISCORDJS_BOT_TOKEN` \
+run `npm run start`
