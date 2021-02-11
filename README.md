@@ -1,6 +1,6 @@
 # doinkbot
-fun bot for discord servers
-the same as dinkbot, but with doinks!
+fun bot for discord servers \
+the same as dinkbot, but with doinks! \
 made with javscript (node.js)
 
 # functions
