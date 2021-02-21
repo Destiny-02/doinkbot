@@ -5,6 +5,7 @@ made with javscript (node.js)
 
 # link
 https://discord.com/oauth2/authorize?client_id=808176427215486998&scope=bot
+note: would not reccomend inviting dinkbot and doinkbot into the same server!
 
 # functions
 `d!hello` - greets user \
