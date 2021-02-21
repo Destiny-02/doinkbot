@@ -3,6 +3,9 @@ fun bot for discord servers \
 the same as dinkbot, but with doinks! \
 made with javscript (node.js)
 
+# link
+https://discord.com/oauth2/authorize?client_id=808176427215486998&scope=bot
+
 # functions
 `d!hello` - greets user \
 `d!info` - shows list of commands \
