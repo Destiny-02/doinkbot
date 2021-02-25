@@ -21,7 +21,9 @@ note: would not recommend inviting dinkbot and doinkbot into the same server!
 tongue react on eyes emojis\
 greets any user that introduces themself in the text channel (eg. I'm Destiny!) \
 replies to doinks \
-replies to hi/hello 
+replies to hi/hello \
+
+hosted in the cloud (UptimeRobot + Repl.it) \
 
 # installation instructions
 install node.js https://nodejs.org/en/download/ \
