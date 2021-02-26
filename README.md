@@ -19,7 +19,7 @@ note: would not recommend inviting dinkbot and doinkbot into the same server!
 `d!face2` - sends a different dinkface \
 `d!nsfw` - sends a long list of dinkfaces \
 tongue react on eyes emojis\
-greets any user that introduces themself in the text channel (eg. I'm Destiny!) \
+greets any user that introduces themself in the text channel (eg. I'm Destiny) \
 replies to doinks \
 replies to hi/hello
 
