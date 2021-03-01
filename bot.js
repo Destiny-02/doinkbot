@@ -4,6 +4,7 @@
 // Last updated 11 February 2021
 
 require('dotenv').config();
+const keep_alive = require('./keep_alive.js')
 
 console.log(process.env.DISCORDJS_BOT_TOKEN);
 
@@ -53,7 +54,7 @@ client.on('message', (message) => {
 		.split(/\s+/);
 		
 		if (CMD_NAME === 'help' || CMD_NAME === 'info' || CMD_NAME === 'commands'){
-			let help_text = 'd!hello \nd!info \nd!random \nd!doink <user> (use exact discord name, not nickname)\nd!doink user>\nd!special <user>\nd!big \nd!face\nd!face2\nd!nsfw\n\n made by Destiny \nhttps://github.com/Destiny-02/doinkbot';
+			let help_text = 'd!hello \nd!info \nd!random \nd!dink <user> (use exact discord name, not nickname)\nd!doink <user>\nd!special <user>\nd!big \nd!face\nd!face2\nd!nsfw\n\n made by Destiny \nhttps://github.com/Destiny-02/doinkbot';
 			let help_embed = new Discord.MessageEmbed()
 				.setTitle('List of commands')
 				.setDescription(help_text)
@@ -159,5 +160,4 @@ client.on('message', (message) => {
 		}
 	 
 }); 
-
 client.login(process.env.DISCORDJS_BOT_TOKEN); 
