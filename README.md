@@ -24,9 +24,3 @@ replies to doinks \
 replies to hi/hello
 
 hosted in the cloud (UptimeRobot + Repl.it)
-
-# installation instructions
-install node.js https://nodejs.org/en/download/ \
-install dependences (`npm i`) \
-create `.env` file with bot token `DISCORDJS_BOT_TOKEN` \
-run `npm run start`
