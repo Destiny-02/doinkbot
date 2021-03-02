@@ -4,6 +4,7 @@
 // Last updated 11 February 2021
 
 require('dotenv').config();
+const keep_alive = require('./keep_alive.js')
 
 console.log(process.env.DISCORDJS_BOT_TOKEN);
 
@@ -159,5 +160,4 @@ client.on('message', (message) => {
 		}
 	 
 }); 
-
 client.login(process.env.DISCORDJS_BOT_TOKEN); 
