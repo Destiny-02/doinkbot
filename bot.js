@@ -64,7 +64,6 @@ client.on('message', (message) => {
 		} 
 		
 		if (CMD_NAME === 'random'){
-			message.channel.send();
 			let random_text = find_doink(dictionary, letter_emojis);
 			let random_embed = new Discord.MessageEmbed()
 				.setTitle('doink stands for...')
