@@ -67,7 +67,7 @@ client.on('message', (message) => {
 			message.channel.send();
 			let random_text = find_doink(dictionary, letter_emojis);
 			let random_embed = new Discord.MessageEmbed()
-				.setTitle('List of commands')
+				.setTitle('doink stands for...')
 				.setDescription(random_text)
 				.setColor('#0x852d49')
 			message.channel.send(random_embed);
