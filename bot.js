@@ -29,7 +29,7 @@ const find_doink = (dictionary, letter_emojis) => {
 	for (let i = 0; i < letter_emojis.length; i++) {
 		let line = letter_emojis[i];
 		// finds random word in dictionary
-		line += dictionary[i][Math.floor(Math.random() * dictionary[i].length)];
+		line += dictionary[i][Math.floor(Math.random() * dictionary[i].length)].substring(1, dictionary[i].length);
 		line += "\n";
 		doink_string += line; 
 	}
