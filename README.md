@@ -21,6 +21,7 @@ note: would not recommend inviting dinkbot and doinkbot into the same server!
 tongue react on eyes emojis\
 greets any user that introduces themself in the text channel (eg. I'm Destiny) \
 replies to doinks \
-replies to hi/hello
+replies to hi/hello \
+will reply if anyone is talking about them
 
 hosted in the cloud (UptimeRobot + Repl.it)
