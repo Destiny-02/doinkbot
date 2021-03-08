@@ -53,6 +53,7 @@ client.on('message', (message) => {
 		.substring(PREFIX.length)
 		.split(/\s+/);
 		
+    // help 
 		if (CMD_NAME === 'help' || CMD_NAME === 'info' || CMD_NAME === 'commands'){
 			let help_text = 'd!hello \nd!info \nd!random \nd!dink <user> (use exact discord name, not nickname)\nd!doink <user>\nd!special <user>\nd!big \nd!face\nd!face2\nd!nsfw\n\n made by Destiny \nhttps://destiny-02.github.io/index.html';
 			let help_embed = new Discord.MessageEmbed()
@@ -63,6 +64,7 @@ client.on('message', (message) => {
 		
 		} 
 		
+    // random
 		if (CMD_NAME === 'random'){
 			let random_text = find_doink(dictionary, letter_emojis);
 			let random_embed = new Discord.MessageEmbed()
@@ -73,28 +75,34 @@ client.on('message', (message) => {
 		
 		}
 		
+    // big
 		if (CMD_NAME === 'big'){
 			message.channel.send(':regional_indicator_d::regional_indicator_i::regional_indicator_n::regional_indicator_k:');
 		}
 		
+    // face
 		if (CMD_NAME === 'face'){
 			message.channel.send(':eyes:').then(function(sentMessage) {
 			sentMessage.react('👅')});
 		}
 		
+    //face2
 		if (CMD_NAME === 'face2'){
 			message.channel.send(':eyes:').then(function(sentMessage) {
 			sentMessage.react('👄')});
 		}
 		
+    // nsfw
 		if (CMD_NAME === 'nsfw'){
 			message.channel.send(':eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n');
 		}
 		
+    // hello
 		if (CMD_NAME === 'hello'){
 			message.channel.send(`Hello <@${message.author.id}>`)
 		}
 		
+    // dink user
 		if (CMD_NAME === 'dink') {
 			try {
 				user_id = client.users.cache.find(u => u.username === args[0]).id;
@@ -107,6 +115,7 @@ client.on('message', (message) => {
 			
 		}
 		
+    // doink user
 		if (CMD_NAME === 'doink') {
 			try {
 				user_id = client.users.cache.find(u => u.username === args[0]).id;
@@ -119,6 +128,7 @@ client.on('message', (message) => {
 			
 		}
 		
+    // special dink user
 		if (CMD_NAME === 'special') {
 			try {
 				user_id = client.users.cache.find(u => u.username === args[0]).id;
@@ -144,20 +154,24 @@ client.on('message', (message) => {
 	if (message.content === 'hi'){
 			message.channel.send('hi');
 		}
-		
+
+  // im msg	
 	if (message.content.toLowerCase().startsWith('im ') || message.content.toLowerCase().startsWith('i\'m ')){
 		// finds message after the "i am" part
 		message.channel.send(`Hi ${message.content.substring( message.content.indexOf(" ") + 1, message.content.length )} I'm dinkbot!`);
 	}
 	
+  // i am msg
 	if (message.content.toLowerCase().startsWith('i am ')){
 		message.channel.send(`Hi ${message.content.substring(5, message.content.length)} I'm dinkbot!`);
 	}
 	
+  // doink
 	if (message.content === 'doink'){
 			message.channel.send(':tongue:***__DOINK__***:tongue:');
 		}
 	
+  // detects name
   if (message.content.toLowerCase().includes('doinkbot')) {
       message.channel.send('did someone say something :eyes:')
   }
