@@ -157,6 +157,9 @@ client.on('message', (message) => {
 	if (message.content === 'doink'){
 			message.channel.send(':tongue:***__DOINK__***:tongue:');
 		}
-	 
+	
+  if (message.content.toLowerCase().includes('doinkbot')) {
+      message.channel.send('did someone say something :eyes:')
+  }
 }); 
 client.login(process.env.DISCORDJS_BOT_TOKEN); 
