@@ -1,7 +1,7 @@
 # doinkbot
 fun bot for discord servers \
 the same as dinkbot, but with doinks! \
-made with javscript (node.js)
+made with JavaScript (node.js)
 
 # link
 https://discord.com/oauth2/authorize?client_id=808176427215486998&scope=bot \
@@ -21,6 +21,7 @@ note: would not recommend inviting dinkbot and doinkbot into the same server!
 tongue react on eyes emojis\
 greets any user that introduces themself in the text channel (eg. I'm Destiny) \
 replies to doinks \
-replies to hi/hello
+replies to hi/hello \
+will reply if anyone is talking about them
 
 hosted in the cloud (UptimeRobot + Repl.it)
