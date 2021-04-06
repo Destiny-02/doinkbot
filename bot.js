@@ -175,5 +175,14 @@ client.on('message', (message) => {
   if (message.content.toLowerCase().includes('doinkbot')) {
       message.channel.send('did someone say something :eyes:')
   }
+
+  // yes replies to no and vice versa
+  if (message.content.toLowerCase().startsWith('yes')){
+		message.channel.send('no');
+  }
+  if (message.content.toLowerCase().startsWith('no')){
+		message.channel.send('yes');
+  }
 }); 
+
 client.login(process.env.DISCORDJS_BOT_TOKEN); 
