@@ -93,13 +93,16 @@ client.on('message', (message) => {
 		}
 		
     // nsfw
-		if (CMD_NAME === 'nsfw'){
-			message.channel.send(':eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n:eyes:\n:tongue:\n');
-		}
+    if (CMD_NAME === 'nsfw'){
+      for (i = 0; i < 10; i++) {
+        message.channel.send(':eyes:\n:tongue:\n');
+      }
+    }
+		
 		
     // hello
 		if (CMD_NAME === 'hello'){
-			message.channel.send(`Hello <@${message.author.id}>`)
+			message.channel.send(`Hello <@${message.author.id}>`);
 		}
 		
     // dink user
