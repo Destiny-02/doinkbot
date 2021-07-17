@@ -55,7 +55,7 @@ client.on('message', (message) => {
 		
     // help 
 		if (CMD_NAME === 'help' || CMD_NAME === 'info' || CMD_NAME === 'commands'){
-			let help_text = 'd!hello \nd!info \nd!random \nd!dink <user> (use exact discord name, not nickname)\nd!doink <user>\nd!special <user>\nd!big \nd!face\nd!face2\nd!nsfw\n\n made by Destiny \nhttps://destiny-02.github.io/index.html';
+			let help_text = 'd!hello \nd!info \nd!random \nd!dink <user> (use exact discord name, not nickname)\nd!doink <user>\nd!special <user>\nd!big \nd!face\nd!face2\nd!nsfw\n\n made by Destiny';
 			let help_embed = new Discord.MessageEmbed()
 				.setTitle('List of commands')
 				.setDescription(help_text)
